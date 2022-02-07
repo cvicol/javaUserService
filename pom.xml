@@ -11,10 +11,6 @@
     <properties>
         <junit.version>4.12</junit.version>
         <maven-surefire-plugin.version>2.20</maven-surefire-plugin.version>
-        <hamcrest.version>2.0.0.0</hamcrest.version>
-        <mockito.version>1.9.5</mockito.version>
-        <dummy.version>99.0-does-not-exist</dummy.version>
-        <easymock.version>3.4</easymock.version>
         <guava.version>21.0</guava.version>
         <commons-lang.version>2.6</commons-lang.version>
      </properties>
@@ -23,28 +19,7 @@
 
 
         <!-- Test dependencies -->
-        <dependency>
-            <groupId>org.easymock</groupId>
-            <artifactId>easymock</artifactId>
-            <version>${easymock.version}</version>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.mockito</groupId>
-            <artifactId>mockito-core</artifactId>
-            <version>${mockito.version}</version>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.hamcrest</groupId>
-            <artifactId>java-hamcrest</artifactId>
-            <version>${hamcrest.version}</version>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
+       <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>${junit.version}</version>
@@ -62,15 +37,6 @@
             <artifactId>guava</artifactId>
             <version>${guava.version}</version>
         </dependency>
-
-       <!--Test dependencies-->
-        <dependency>
-            <groupId>org.mockito</groupId>
-            <artifactId>mockito-all</artifactId>
-            <version>${mockito.version}</version>
-            <scope>test</scope>
-        </dependency>
-
     </dependencies>
 
     <build>
@@ -166,8 +132,5 @@
                 </configuration>
             </plugin>
         </plugins>
-
-
     </build>
-
 </project>

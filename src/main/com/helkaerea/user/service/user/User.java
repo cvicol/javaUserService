@@ -35,6 +35,7 @@ public class User implements Comparable<User>{
         return EqualsBuilder.reflectionEquals(this, obj);
     }
 
+//    Q: what happens if I remove Equals and Hashcode?
     @Override
     public String toString() {
         return ToStringBuilder.reflectionToString(this);

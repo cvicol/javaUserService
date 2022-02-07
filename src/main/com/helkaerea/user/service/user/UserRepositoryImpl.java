@@ -23,5 +23,6 @@ public class UserRepositoryImpl implements UserRepository{
     }
 
     //Q: Implement a method that allows you to get all the users over a certain age
+    //Q: Implement a method that removes a User from the repository - based on name.
     //why did I use List - as the type of the list of users, and not an implementation of List?
 }

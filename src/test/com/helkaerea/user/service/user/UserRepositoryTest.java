@@ -23,13 +23,8 @@ public class UserRepositoryTest {
 
     @Test
     public void addingNewUserUsingTheFieldsWillPersistIt() {
-        String name = "Claudia";
-        int age = 42;
-        repository.addNewUserWith(name, age);
-        List<User> users = repository.getAllUsers();
-        Assert.assertTrue("Thesize or repo is 1", users.size() == 1);
-        Assert.assertTrue("the name is the same", users.get(0).getName() == (name));
-        Assert.assertTrue("the age should be the same", users.get(0).getAge() == (age));
+        //Q: add a test that will check if you add a user with the individual fields that it adds it to the repository.
+             //repository.addNewUserWith(name, age);
     }
 
     @Test(expected = DuplicateUserException.class)
@@ -37,8 +32,8 @@ public class UserRepositoryTest {
         User newUser = new User("Claudia", 42);
         repository.addNewUser(newUser);
         repository.addNewUser(newUser);
-        //Q : what other data structure you would use, in the UserRepository, in order to avoid having to work hard for deduplicating
-
+        //Q: what other data structure you would use, in the UserRepository, in order to avoid having to work hard for deduplicating
+        //Q: is it a good idea or not to through an exception for a duplicate?
     }
 
     @Test(expected = IllegalArgumentException.class)
