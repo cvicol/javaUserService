@@ -1,7 +1,8 @@
 package com.helkaerea.user.service.user;
+import java.util.ArrayList;
 import java.util.List;
 public class UserRepositoryImpl implements UserRepository{
-    private List<User> theUsers;
+    private List<User> theUsers ;
 
     @Override
     public void addNewUser(User user) {
@@ -17,7 +18,10 @@ public class UserRepositoryImpl implements UserRepository{
         return theUsers;
     }
 
-    public List<User> getAllUsersWithName(String Name) {
+    public List<User> getAllUsersWithName(String name) {
         return null;
     }
+
+    //Q: Implement a method that allows you to get all the users over a certain age
+    //why did I use List - as the type of the list of users, and not an implementation of List?
 }
