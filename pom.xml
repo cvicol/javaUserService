@@ -48,6 +48,8 @@
             </resource>
         </resources>
 
+        <sourceDirectory>src/main/</sourceDirectory>
+        <testSourceDirectory>src/test</testSourceDirectory>
         <!-- version of plugins -->
         <pluginManagement>
             <plugins>
